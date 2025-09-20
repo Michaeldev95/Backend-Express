@@ -1,0 +1,21 @@
+{
+  "name": "server101",
+  "version": "1.0.0",
+  "description": "this is a server express 101",
+  "license": "ISC",
+  "author": "jasondo",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "body-parser": "^2.2.0",
+    "ejs": "^3.1.10",
+    "ejs-lint": "^2.0.1",
+    "express": "^5.1.0",
+    "morgan": "^1.10.1",
+    "nodemon": "^3.1.10",
+    "path": "^0.12.7"
+  }
+}

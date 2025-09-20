@@ -1,0 +1,46 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>testing</h1>
+    <%= data.title%><br>
+
+        <p>
+            <% if(data.second % 2 !==0) { %>
+                <ul>
+                    <% for(let i=0; i < data.items.length; i++) { %>
+                        <li>
+                            <%= data.items[i] %>
+                        </li>
+
+                        <br>
+                        <% } %>
+                </ul>
+
+                <% } else { %>
+                    The number is even<br>
+                    <% } %>
+
+        </p>
+        <p>
+            <% if( data.fruits) {%>
+                <%%= data.fruits>
+                    <%}%>
+        </p>
+
+
+        <p>
+            <%= data.htmlContent%><br>
+
+        </p>
+
+        <%- include("footer.ejs") %>
+
+</body>
+
+</html>
